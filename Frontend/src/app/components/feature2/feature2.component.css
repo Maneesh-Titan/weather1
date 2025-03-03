@@ -1,0 +1,81 @@
+/* air-pollution.component.css (or whatever you name your CSS file) */
+
+.body-container {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("feature2-background.jpg"); /* Replace with your background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.city-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.city-input:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue submit button for air pollution */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.pollution-info {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.pollution-info h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.pollution-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}

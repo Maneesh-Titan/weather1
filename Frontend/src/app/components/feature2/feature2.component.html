@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Pollution Data</title>
+</head>
+<body>
+    <div class="body-container">
+        <div class="container">
+            <div class="content">
+                <div class="input-area">  
+                    <input type="text" placeholder="Enter The City" #cityInput class="city-input"/>
+                    <button (click)="getAirPollutionData(cityInput.value)" class="submit-button">Submit</button>
+                </div>
+        
+                <div *ngIf="airPollutionData" class="pollution-info">
+                    <h2>Air Pollution Data in {{ cityInput.value }}</h2>
+                    <p>Air Quality Index: {{ airPollutionData.Eindex }}</p>
+                    <p>PM2.5: {{ airPollutionData.pm2_5 }} µg/m³</p>
+                    <p>PM10: {{ airPollutionData.pm10 }} µg/m³</p>
+                    <p>NO2: {{ airPollutionData.no2 }} µg/m³</p>
+                    <p>SO2: {{ airPollutionData.so2 }} µg/m³</p>
+                    <p>O3: {{ airPollutionData.o3 }} µg/m³</p>
+                    <p>CO: {{ airPollutionData.co }} µg/m³</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
